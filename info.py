@@ -30,7 +30,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('2162182935', ''))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('6964538561', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('2162182935', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
@@ -52,8 +52,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 # MongoDB information
 DATABASE_URI = environ.get('mongodb+srv://rahat:rahat@rahat.ncjti.mongodb.net/?retryWrites=true&w=majority&appName=Rahat', "")
-DATABASE_NAME = environ.get('Rahat', "techvjautobot")
-COLLECTION_NAME = environ.get('sample_mflix.comments', 'techvjcollection')
+DATABASE_NAME = environ.get('rahat', "techvjautobot")
+COLLECTION_NAME = environ.get('Telegram_Files', 'techvjcollection')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', False)) # Set Ture Or False
